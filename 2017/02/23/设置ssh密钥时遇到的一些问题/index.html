@@ -6,21 +6,30 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Hello World | Oce4nChen</title>
+  <title>部署hexo到github时遇到的一些问题 | Oce4nChen</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+  <meta name="description" content="网上许多hexo博客部署的教程，跟着一些hexo&amp;amp;github部署教程做到设置ssh密钥时可能会出现这些错误
+Administrator@W7X64-20131108T MINGW64 ~/Desktop
+$ ssh -T git@github.com
+socket: Socket operation on non-socket
+socket: Socket operation on no">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2017/02/22/hello-world/index.html">
+<meta property="og:title" content="部署hexo到github时遇到的一些问题">
+<meta property="og:url" content="http://yoursite.com/2017/02/23/设置ssh密钥时遇到的一些问题/index.html">
 <meta property="og:site_name" content="Oce4nChen">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
-<meta property="og:updated_time" content="2017-02-22T14:11:38.952Z">
+<meta property="og:description" content="网上许多hexo博客部署的教程，跟着一些hexo&amp;amp;github部署教程做到设置ssh密钥时可能会出现这些错误
+Administrator@W7X64-20131108T MINGW64 ~/Desktop
+$ ssh -T git@github.com
+socket: Socket operation on non-socket
+socket: Socket operation on no">
+<meta property="og:updated_time" content="2017-02-23T16:09:06.061Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+<meta name="twitter:title" content="部署hexo到github时遇到的一些问题">
+<meta name="twitter:description" content="网上许多hexo博客部署的教程，跟着一些hexo&amp;amp;github部署教程做到设置ssh密钥时可能会出现这些错误
+Administrator@W7X64-20131108T MINGW64 ~/Desktop
+$ ssh -T git@github.com
+socket: Socket operation on non-socket
+socket: Socket operation on no">
   
     <link rel="alternative" href="/atom.xml" title="Oce4nChen" type="application/atom+xml">
   
@@ -160,35 +169,37 @@ Quick">
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-hello-world" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-设置ssh密钥时遇到的一些问题" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      部署hexo到github时遇到的一些问题
     </h1>
   
 
         
-        <a href="/2017/02/22/hello-world/" class="archive-article-date">
-  	<time datetime="2017-02-22T14:11:38.952Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-22</time>
+        <a href="/2017/02/23/设置ssh密钥时遇到的一些问题/" class="archive-article-date">
+  	<time datetime="2017-02-23T14:44:35.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-23</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+        <p>网上许多hexo博客部署的教程，<br>跟着一些hexo&amp;github部署教程做到设置ssh密钥时可能会出现这些错误</p>
+<pre><code>Administrator@W7X64-20131108T MINGW64 ~/Desktop
+$ ssh -T git@github.com
+socket: Socket operation on non-socket
+socket: Socket operation on non-socket
+ssh: connect to host github.com port 22: Socket operation on non-socket
+</code></pre><p>自己网上找了好久都没发现问题在哪（以上命令是在桌面右键Git bush上执行的），网上找有的说是win10的原因，有的人说装32bit的就能解决问题，有的人说ssh密钥没复制好，自己搞了好久都没搞定，</p>
+<p>于是我换了用git shell（github官网下的）还是不行，然后我一直改ssh密钥一直试，还是不行，后来我在网上查资料发现可能是密钥命名的问题，自己新建的密钥命名都是id_rsa(这里我都是跟着教程做的，后来才发现我自己的github早就有github_rsa密钥了，我把原来的删了，这可能是版本问题，我看的教程都是前几年的)，于是我把id_rsa和id_rsa.pub改成github_rsa，github_rsa.pub，果然成功了（在git shell上能成功）。成功后是这样的：</p>
+<pre><code>Warning: Permanently added &apos;github.com,192.30.253.113&apos; (RSA) to the list of known hosts.
+Hi Oce4nChen! You&apos;ve successfully authenticated, but GitHub does not provide shell access
+</code></pre><p>.<br>但是我这里没有和许多教程一样有一个选择（y/n）的过程，不知道为什么，<br>还有一个问题，同样的情况下在git bush上执行还是出现上文中的错误，至今没找到是什么原因。<br>如果你遇到和我一样的问题希望这能帮到你</p>
 
       
 
@@ -218,6 +229,17 @@ Quick">
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">hexo部署</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -268,7 +290,7 @@ Quick">
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/02/22/hello-world/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/02/23/设置ssh密钥时遇到的一些问题/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -282,15 +304,11 @@ Quick">
   
 <nav id="article-nav">
   
-    <a href="/2017/02/23/fblog/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          fblog
-        
-      </div>
-    </a>
   
+    <a href="/2017/02/23/fblog/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">fblog</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 

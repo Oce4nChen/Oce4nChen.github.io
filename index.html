@@ -155,6 +155,78 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-设置ssh密钥时遇到的一些问题" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/02/23/设置ssh密钥时遇到的一些问题/">部署hexo到github时遇到的一些问题</a>
+    </h1>
+  
+
+        
+        <a href="/2017/02/23/设置ssh密钥时遇到的一些问题/" class="archive-article-date">
+  	<time datetime="2017-02-23T14:44:35.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-23</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>网上许多hexo博客部署的教程，<br>跟着一些hexo&amp;github部署教程做到设置ssh密钥时可能会出现这些错误</p>
+<pre><code>Administrator@W7X64-20131108T MINGW64 ~/Desktop
+$ ssh -T git@github.com
+socket: Socket operation on non-socket
+socket: Socket operation on non-socket
+ssh: connect to host github.com port 22: Socket operation on non-socket
+</code></pre><p>自己网上找了好久都没发现问题在哪（以上命令是在桌面右键Git bush上执行的），网上找有的说是win10的原因，有的人说装32bit的就能解决问题，有的人说ssh密钥没复制好，自己搞了好久都没搞定，</p>
+<p>于是我换了用git shell（github官网下的）还是不行，然后我一直改ssh密钥一直试，还是不行，后来我在网上查资料发现可能是密钥命名的问题，自己新建的密钥命名都是id_rsa(这里我都是跟着教程做的，后来才发现我自己的github早就有github_rsa密钥了，我把原来的删了，这可能是版本问题，我看的教程都是前几年的)，于是我把id_rsa和id_rsa.pub改成github_rsa，github_rsa.pub，果然成功了（在git shell上能成功）。成功后是这样的：</p>
+<pre><code>Warning: Permanently added &apos;github.com,192.30.253.113&apos; (RSA) to the list of known hosts.
+Hi Oce4nChen! You&apos;ve successfully authenticated, but GitHub does not provide shell access
+</code></pre><p>.<br>但是我这里没有和许多教程一样有一个选择（y/n）的过程，不知道为什么，<br>还有一个问题，同样的情况下在git bush上执行还是出现上文中的错误，至今没找到是什么原因。<br>如果你遇到和我一样的问题希望这能帮到你</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">hexo部署</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/02/23/设置ssh密钥时遇到的一些问题/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  
     <article id="post-fblog" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -365,6 +437,10 @@
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">daily</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">hexo部署</a>
               </li>
             
             <div class="clearfix"></div>
