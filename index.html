@@ -152,6 +152,75 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-ChattingRoom" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/03/09/ChattingRoom/">ChattingRoom</a>
+    </h1>
+  
+
+        
+        <a href="/2017/03/09/ChattingRoom/" class="archive-article-date">
+  	<time datetime="2017-03-09T15:04:20.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-09</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="小型聊天室"><a href="#小型聊天室" class="headerlink" title="小型聊天室"></a>小型聊天室</h1><hr>
+<p><a href="https://oce4nchen.github.io/chatting/" target="_blank" rel="external">聊天入口</a></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;做这个小Demo的时候遇到一个至今都没解决的一个问题，这个问题搞了我几天，就是一个显示在线人数的功能，我是用了野狗服务器的机制，它里面有一个判断是否连接的方法，每次打开这个网页时，它会首先判断你是否链接上这个服务器，若是true就在线人数+1，好问题来了，这个+1怎么加呢，我首先是想到了再数据库里设置一个键值对，这个键值对就是用来储存在线人数的，每当有人连接上服务器时，他就会update这个value+1，退出或者断网就会触发断开连接这个方法，它会update这个value-1，这只能在2人的时候正常工作，一但多人就会出现互相更新，很混乱，至今没搞懂这个里面是怎么运行的，这里困了好久，于是就放弃了，<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;然后用了另一种方法，每次有人连接就push一个新的对象，然后关闭或者断网就把这个对象remove掉，接着又遇到一个问题，断开连接的后remove()方法是不带参数的，瞬间奔溃。。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;然后想了第3个办法，就是设置以个按钮手动退出，让在线人数手动-1( ▼-▼)。。。。</p>
+<hr>
+<h3 id="然后分享一首坂井泉水的励志神曲（不要认输）"><a href="#然后分享一首坂井泉水的励志神曲（不要认输）" class="headerlink" title="然后分享一首坂井泉水的励志神曲（不要认输）"></a>然后分享一首坂井泉水的励志神曲（不要认输）</h3><p>只差一点点了！<br><img src="/asset/timg.jpg" alt="此处输入图片的描述"></p>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=25845515&auto=0&height=66"></iframe>
+
+
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">小Demo</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/03/09/ChattingRoom/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  
     <article id="post-小型弹幕" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -1343,11 +1412,11 @@ Hi Oce4nChen! You&apos;ve successfully authenticated, but GitHub does not provid
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">daily</a>
+                <a href="javascript:void(0)" class="js-tag color1">小Demo</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">小Demo</a>
+                <a href="javascript:void(0)" class="js-tag color1">daily</a>
               </li>
              
               <li class="article-tag-list-item">
