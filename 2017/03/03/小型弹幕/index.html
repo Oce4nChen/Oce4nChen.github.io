@@ -9,6 +9,10 @@
   <title>小型弹幕 | Oce4nChen</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <script type="text/javascript" src="../../../../public/th.js/three.js"></script>
+  <script type="text/javascript" src="../../../../public/th.js/stats.js"></script>
+  <script type="text/javascript" src="../../../../public/th.js/gui.js"></script>
+  <script type="text/javascript" src="../../../../public/th.js/lizi.js"></script>
   <meta name="description" content="#一个弹幕小Demo弹幕体验入口，请使用文明弹幕2333
 
 这个小Demo是仿照freecodecamp社区上的一个项目写的，主要利用了野狗这个免费的小型服务器（挺不错的，主要是免费，不过限制访问用户数，流量忘记限制多少了，对于我们用来学习足够用了），准备用这个服务器写个小型聊天室。
@@ -43,6 +47,14 @@
     #container.show {
       background: linear-gradient(200deg,#a0cfe4,#e8c37e);
     }
+    .lizi {
+    	position: fixed;
+    	height: 100%;
+    	width: 100%;
+    	margin: 0;
+      overflow: hidden;
+      background-color: #000000;
+    }
   </style>
   
 
@@ -51,6 +63,13 @@
 </head>
 
 <body>
+	<div class="lizi">
+		<div id="Stats-output">
+		</div>
+		<!-- Div which will hold the Output -->
+		<div id="WebGL-output">
+		</div>
+	</div>	
   <div id="container" q-class="show:isCtnShow">
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
     <div class="left-col" q-class="show:isShow">
