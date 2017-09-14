@@ -9,6 +9,7 @@
   <title>Archives: 2017/2 | Oce4nChen</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <script type="text/javascript" src="http://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
   <script type="text/javascript" src="https://oce4nchen.github.io/threejsdemo/js/three.js"></script>
   <script type="text/javascript" src="https://oce4nchen.github.io/threejsdemo/js/stats.js"></script>
   <script type="text/javascript" src="https://oce4nchen.github.io/threejsdemo/js/gui.js"></script>
@@ -32,6 +33,7 @@
       background: linear-gradient(200deg,#a0cfe4,#e8c37e);
     }
     .lizi {
+    	z-index: 9999;
     	position: fixed;
     	height: 100%;
     	width: 100%;
@@ -50,6 +52,10 @@
 	<div class="lizi">
 		<div id="Stats-output">
 		</div>
+		<div id="clickInfo" style="height: 100px;width: 250px;background: #000;position: absolute;top: 50%;left: 50%;transform:translate(-50%,-50%);opacity: 0.5;cursor: pointer;">
+			<span style="color: #F6F6F6;">View My Blog</span>/br
+			<span style="color: #F6F6F6;">https://oce4nchen.github.io/</span>
+		</div>	
 		<!-- Div which will hold the Output -->
 		<div id="WebGL-output">
 		</div>
@@ -403,7 +409,6 @@
       var o = e[r] = {exports: {}, id: r, loaded: !1};
       return t[r].call(o.exports, o, o.exports, n), o.loaded = !0, o.exports
     }
-
     var e = {};
     return n.m = t, n.c = e, n.p = "./", n(0)
   }([function (t, n, e) {
@@ -1306,4 +1311,12 @@
 </div>
   </div>
 </body>
+<script type="text/javascript">
+	document.getElementById('clickInfo').addEventListener('click', function () {
+        var a = $('.lizi')
+        a.animate({top:window.innerHeight},"slow")
+        console.log(window.innerHeight)
+	})
+//	console.log(document.getElementById('clickInfo'))
+  </script>
 </html>
